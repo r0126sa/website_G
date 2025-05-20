@@ -1,0 +1,263 @@
+<body>
+    <!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+    <html>
+
+    <head>
+        <meta charset="UTF-8">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&display=swap" rel="stylesheet">
+        <title>website_G</title>
+        <link rel="stylesheet" href="website_G_yuto.css">
+    </head>
+
+    <body>
+        <header>
+            <p class="title" onclick="goHome()">PROJECTION <br> MAPPING </p>
+
+            <script>
+                function goHome() {
+                    // ホームページにリダイレクトするコード
+                    window.location.href = "../index.html";
+                }
+            </script>
+
+            <nav class="nav">
+                <ul class="menu-group">
+                    <li class="menu-item">
+                        <div class="menu-item-sub">
+                            <a href="#">方法論と比較</a>
+                            <div class="menu-item-main">
+                                <a href="#">METHOD</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-sub">
+                            <a href="../history/history.html">歴史</a>
+                            <div class="menu-item-main">
+                                <a href="../history/history.html">HISTORY</a>
+                            </div>
+                        </div>
+                    </li>
+                    <li class="menu-item">
+                        <div class="menu-item-sub">
+                            <a href="../prospect/prospect.html">最新技術と例</a>
+                            <div class="menu-item-main">
+                                <a href="../prospect/prospect.html">PROSPECT</a>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <div class="line"></div>
+            </nav>
+        </header>
+
+        <main>
+            <h1 class="sub-title">方法論</h1>
+            <section id="methodology">
+
+
+                <p class="sub-strings">
+                    プロジェクションマッピングは、主に投影対象の表面に映像素材を配置し、貼り合わせる技術（マッピング）を利用し、平面画像を立体物に貼り付けリアルに見せる技術である。<br>
+                    画像を投影するには <strong>ソフトウェア</strong>の技術が必要不可欠であり、さまざまな技術が利用されている。<br>
+                    <!--セクション三つに分けてます,ワンチャン足りなそうならハードウェアも描く -->
+                    <!--ソフトウェアセクション -->
+                </p>
+            </section>
+            <section id="methodology">
+                <h2>ソフトウェア技術</h2>
+                <p class="sub-strings">
+                <ul>
+                    <li>
+                        <h3><strong>レンダリング</strong></h3>
+
+                        プロジェクションマッピング等に使用される動画や画像、CGを抽象的な線などのデータやコンピュータ言語などを用いて生成する技術であり、映像技術の中核を担う技術である。この技術により下記に示すマッピングやレイトレーシングなどの技術を活用することができる。
+                        <br>
+                        <img src="photo/render,car.png" alt="レンダリング" width="45%" height="200">
+                        <img src="photo/render,line.png" alt="レンダリング" width="45%" height="200">
+                        <br>
+                        <div style="text-align: right;">
+                            出典：<a
+                                href="https://3d-modely.com/blog/how-to/post-1555/">3Dアニメーションのレンダリングとは？</a>
+                        </div>
+                        <br>
+                    <li>
+                        <h3><strong>マッピング</strong></h3>
+                        プロジェクションマッピングの中心となる技術であり、主に作成された画像・動画を凹凸のある構造体に違和感のないように貼り付ける技術です。
+                        実際の貼り付ける物体の形状に映像素材を正確に合わせるために投影する物体の詳細なモデリングとレンダリングを3DCGで行い、テクスチャマッピングとバンプマッピングを行う。<br>
+                        テクスチャマッピングとは、3DCGでモデリングされた物体に対して、単色の塗りつぶしでは表現できない質感を与える技術であり、プロジェクションマッピングでは、二次元の画像貼り付けではなく三次元空間で座標変換し投影したい画像や動画を物体に合わせる。<br>
+                        <br>
+                        <img src="photo/witeball.png" alt="" width="30%" height="230">
+                        <img src="photo/texture.png" alt="" width="30%" height="230">
+                        <img src="photo/result.png" alt="" width="30%" height="230">
+
+                        <div style="text-align: right;">
+                            出典：<a
+                                href="https://www.it-shikaku.jp/top30.php?hidari=08-02-01.php&migi=km08-02.php">マルチメディア</a>
+                        </div>
+                        <br>
+                    </li>
+                    <li>
+                        <h3><strong>エッジブレンディング</strong></h3>
+                        最終合成後に前景オブジェクトのエッジを背景プレートにブレンドすることで、合成されるオブジェクトのエッジが自然なものとなるため、画像と画像の境目をより自然に繋げることができる。
+                        簡単に言えば、前のオブジェクトと後ろのオブジェクトの境界をぼやかし馴染ませる技術。
+                        この技術は、大規模なプロジェクションマッピングにおいて、プロジェクターを2台以上利用する際に、プロジェクター間の画像の切れ目を目立たなくすることでみている人の没入感の妨げにならないように利用される。<br>
+                        <img src="photo/blending.png" alt="" width="90%" height="300">
+                        <br>
+                        <div style="text-align: right;">
+                            出典：<a
+                                href="https://optics.fujifilm.com/projector/ja/spec/manual/fp-z6000/warping_blending/blending/">Blending (エッジブレンディング)</a>
+                        </div>
+                        
+                    <li>
+                        <h3><strong>リアルタイムレイトレーシング</strong></h3>
+                        光線に反射を再現しCGを作成するレイトレーシングを改良したパストレーシングとダイナミックプロジェクションマッピングに統合した技術であり、2020年に東京工業大学から発表された。
+                        ダイナミックプロジェクションマッピングとは、高速で移動する物体（ダンサーやドローンなど）に対して映像投影を行うことである。
+                        この技術は、モーションキャプチャを利用し動く物体の位置などの情報を得て、その物体に対し、光の点滅が認識できない程の速さで高速投影を行うと、残像が連続光に見えることを利用して、低遅延かつ、リアルな質感を持つ映像を動く物体に対し、投影をすることができる技術である。<br>
+
+                        <img src="photo/rey.jpg" alt="" width="60%" height="500">
+                        <div style="text-align: right;">
+                            出典：<a
+                                href="https://www.itmedia.co.jp/pcuser/articles/2202/11/news032_2.html">最近よく聞く「レイトレーシング」一体ナニモノ？</a>
+                       
+                    </li>
+                    <li>
+                        <h3><strong>キャリブレーション</strong></h3>
+                        マッピングとは違い、画像が投影対象物に対しピッタリと合うように細かい調整を行うのとともに、プロジェクター間での環境光の影響を考慮し色彩や輝度を調整するなどの、プロジェクションマッピングにおいて、細かな調整を行う手法である。
+                        特に、色彩と輝度のキャリブレーションにおいて、複数のプロジェクターが重なって投影してしまう地点の明るさを調整することで、過剰な明るさ（ホットスポット）を防ぐ役割や、環境光の影響や、各プロジェクターの特性によって異なる色温度や色再現性を均一に保つために利用される。
+                        <img src="photo/img04.jpg" alt="" width="90%" height="350">
+                        <br>
+                        <div style="text-align: right;">
+                            出典：<a href="https://www.sanei-hy.co.jp/rd/pm/">プロジェクションマッピングシステムの開発</a>
+                        </div>
+                     
+                    </li>
+                </ul>
+
+                </p>
+            </section>
+            <h1 class="sub-title">比較</h1>
+            <section id="comparison">
+                <p class="sub-strings">プロジェクションマッピングと他の映像投影技術の比較を行う。<br><br>
+                <h2>1. プロジェクションマッピング</h2>
+                <p><strong>メリット:</strong> 高い演出インパクトにより、観客を驚かせる演出が可能。</p>
+                <p><strong>デメリット: </strong>コスト効率や設置の容易さが劣る。視認性や利用シーンの多様性は条件次第。</p>
+                <p><strong>使用例:</strong> 建物やイベント会場の壁面を使った大規模なイベント。フェスティバルや企業の新製品発表会。</p>
+
+                <h2>2. LEDスクリーン</h2>
+                <p><strong>メリット:</strong> 優れた視認性により、屋外や昼間でもクリアな映像表示が可能。演出インパクトも高い。利用シーンの多様性が高い。</p>
+                <p><strong>デメリット: </strong>コスト効率と設置の容易さに難がある。</p>
+                <p><strong>使用例:</strong> スポーツイベントのライブ中継。屋外広告やデジタルサイネージ。</p>
+
+                <h2>3. ライトショー</h2>
+                <p><strong>メリット:</strong>  コスト効率が良く、準備が比較的容易。</p>
+                <p><strong>デメリット: </strong> 演出インパクトや視認性がやや控えめ。利用シーンの多様性も限定的。</p>
+                <p><strong>使用例:</strong>  音楽フェスティバルでの演出。ナイトイベントやイルミネーション。</p>
+
+                <h2>4. AR（拡張現実）</h2>
+                <p><strong>メリット:</strong>  高い利用シーンの多様性で、様々な分野で応用可能。視認性や演出インパクトも優れている。</p>
+                <p><strong>デメリット: </strong> コスト効率や設置の容易さは条件次第。</p>
+                <p><strong>使用例:</strong>  観光地でのARガイド。教育現場でのインタラクティブ教材。モバイルゲームやアプリ</p>
+
+                <h2>5. 通常のスクリーン投影</h2>
+                <p><strong>メリット:</strong> コスト効率や設置の容易さが非常に高い。比較的幅広いシーンで利用可能。</p>
+                <p><strong>デメリット: </strong> 演出インパクトや視認性は高くない。</p>
+                <p><strong>使用例:</strong>  会議やセミナーでのプレゼンテーション。映画上映や教育用映像の再生。</p>
+
+                <h2>6. 3Dホログラム</h2>
+                <p><strong>メリット:</strong>  圧倒的な演出インパクト</p>
+                <p><strong>デメリット: </strong>コスト効率、視認性、設置の容易さすべてが劣る。利用シーンの多様性も限定的。</p>
+                <p><strong>使用例:</strong>  科学館や博物館での展示。ハイエンドな商業イベントやエンターテイメントショー。</p>
+
+                
+<br>
+<details>
+    <summary>比較表</summary>
+                <div style="text-align: right;">
+                    ◎：極めて優れている
+                    ○：優れている
+                    △：条件次第で妥当
+                    ×：劣る
+                </div>
+                <table>
+                    <thead>
+                        <tr>
+                            <th>手法</th>
+                            <th>コスト効率</th>
+                            <th>視認性</th>
+                            <th>設置・準備の容易さ</th>
+                            <th>演出インパクト</th>
+                            <th>利用シーンの多様性</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>プロジェクションマッピング</td>
+                            <td><strong>×</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>×</strong></td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>△</strong></td>
+                        </tr>
+                        <tr>
+                            <td>LEDスクリーン</td>
+                            <td><strong>×</strong></td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>○</strong></td>
+                        </tr>
+                        <tr>
+                            <td>ライトショー</td>
+                            <td><strong>○</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>○</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>△</strong></td>
+                        </tr>
+                        <tr>
+                            <td>AR（拡張現実）</td>
+                            <td><strong>△</strong></td>
+                            <td><strong>○</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>○</strong></td>
+                            <td><strong>◎</strong></td>
+                        </tr>
+                        <tr>
+                            <td>通常のスクリーン投影</td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>△</strong></td>
+                            <td><strong>○</strong></td>
+                        </tr>
+                        <tr>
+                            <td>3Dホログラム</td>
+                            <td><strong>×</strong></td>
+                            <td><strong>×</strong></td>
+                            <td><strong>×</strong></td>
+                            <td><strong>◎</strong></td>
+                            <td><strong>△</strong></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </details>
+            </section>
+
+        <!--参考文献-->
+        <p class="sub-strings" , style="margin-left: 5%; margin-top: 5%;">参考文献</p>
+        <p class="sub-title" , style="margin-left: 5%; margin-top: 1%;">REFERENCES</p>
+        <div class="method-line" , style="margin-left: 5%; margin-top: 1%;"></div>
+        <a href="../references/references.html#method" class="image-button">
+            <img src="photo/photo3.svg" alt="Photo3" style="margin-left: 70%; margin-top: -4%;">
+        </a>
+        </main>
+
+            <footer class="footer">
+                <div class="footer-content">
+                    <p class="sub2-strings">メディアプロジェクト演習1</p>
+                    <p class="sub-strings"><strong>「プロジェクションマッピング」</strong>について</p>
+                    <p class="sub2-strings">&copy; 2024 グループG : 秋田優斗</p>
+                </div>
+            </footer>

@@ -1,0 +1,25 @@
+p{
+    text-align: center
+  }
+  .boxes-wrapper{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 300px;
+  }
+  .box{
+    width: 30px;
+    height: 30px;
+    background-color: #333;
+    opacity: 0;
+  }
+  .box-02{
+    margin-top: 100px;
+  }
+  .displayed{
+    animation: fadeUp 1s forwards;
+  }
+  @keyframes fadeUp{
+    0%{opacity:0; transform: translateY(0);}
+  100%{opacity:1; transform: translateY(-100px);}
+  }

@@ -1,0 +1,229 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background-color: #F4F8FF;
+    color: #223D6C;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+
+main {
+    padding-top: 15%;
+    /* font-family: "Marcellus SC", "Noto Sans JP", sans-serif; */
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+.title:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    /* ホバー時に25%拡大 */
+}
+
+/* headerのcss */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #F4F8FF;
+    font-family: "Marcellus SC", serif;
+    font-size: 40pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 9999;
+    padding: 0% 5%;
+}
+
+/* ３項目のボタンのcss */
+.menu-group {
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 1%;
+}
+
+.menu-group .menu-item-sub a {
+    font-size: 14pt;
+}
+
+.menu-group .menu-item-main a {
+    font-size: 24pt;
+}
+
+/* ３項目を押したら少し拡大する */
+.menu-item:hover {
+    text-decoration: none;
+    transform: scale(1.25);
+    /* ホバー時に25%拡大 */
+}
+
+.menu-group .menu-item a{
+    color: #223D6C;
+    list-style: none;
+    text-decoration: none;
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #223D6C;
+    /* ラインの色を指定 */
+    /* 下に余白を追加 */
+}
+
+
+/* ここからが本文のcss */
+.main-title {
+    font-size: 48pt;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.sub-title {
+    font-size: 36pt;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.strings {
+    font-size: 24pt;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.sub-strings {
+    font-size: 20pt;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+/*ここから追加分*/
+section {
+    padding: 2rem; /* 内側の余白を設定 */
+    margin: 1rem auto; /* 上下に1remの余白を設定し、中央揃え */
+    max-width: 90%; /* セクションの最大幅を800pxに制限 */
+    background: white; /* 背景色を白に設定 */
+    border-radius: 8px; /* 角を8px丸める */
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* 軽い影を付けて立体感を演出 */
+    font-size: 20pt;
+}
+
+/* 見出し（h1、h2）のスタイル */
+h1{
+    font-size: 24pt;
+    color: #223D6C; /* 濃い青色の文字色を設定 */
+    padding-left: 5%;
+}
+h2{
+    font-size: 22pt;
+    color: #223D6C; /* 濃い青色の文字色を設定 */
+padding-top: 15px;
+padding-bottom: 5px;
+
+}
+h3 {
+    color: #223D6C; /* 濃い青色の文字色を設定 */
+    padding-bottom: 3px;
+    padding-top: 3px;
+    font-size: 20pt;
+}
+
+/* リスト（ul）のスタイル */
+ul {
+    margin: 0; /* 外側の余白をリセット */
+    padding-left: 20px; /* 左側に20pxのインデントを設定 */
+}
+
+/* リスト項目（li）のスタイル */
+li {
+    font-size: 20pt;
+}
+
+/* テーブル全体のスタイル */
+table {
+    width: 100%; /* テーブルの幅を親要素に合わせる */
+    border-collapse: collapse; /* セルの境界線を重ねてスッキリ見せる */
+    margin: 20px 0; /* 上下に20pxの余白を設定 */
+    font-size: 18pt;
+    text-align: left; /* 左揃えで内容を整える */
+}
+
+/* テーブルのヘッダー（th）とデータセル（td）のスタイル */
+th, td {
+    border: 1px solid #ddd; /* セルの境界線を薄いグレーで描画 */
+    padding: 10px; /* セル内に12pxの余白を設定 */
+}
+
+/* テーブルヘッダー（th）の追加スタイル */
+th {
+    background-color: #f4f4f4; /* ヘッダーの背景色を薄いグレーに設定 */
+    text-align: center; /* テキストを中央揃えに設定 */
+}
+
+/* テーブルの偶数行のスタイル */
+tr:nth-child(even) {
+    background-color: #f9f9f9; /* 偶数行に薄いグレーの背景色を付けて視認性を向上 */
+}
+
+/* footerのcss */
+.footer {
+    background-color: #2E3A5F; /* フッターの背景色 (例: ダークブルー) */
+    color: white; /* 文字の色 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 30px 0; /* 上下の余白を設定 */
+    font-family: "Noto Serif JP", serif;
+    line-height: 2.0; /* 行間を設定 */
+  }
+  
+  .footer-content p {
+    margin: 5px 0; /* 各段落の間隔を設定 */
+  }
+
+
+/* footerの文字css */
+.sub2-title {
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+
+}
+
+.sub2-strings {
+    font-size: 14pt;
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+a {
+    color: rgb(22, 166, 214);
+    text-decoration: none; 
+  }
+  
+  a:hover {
+    color: rgb(107, 66, 255);
+  }
+
+
+.image-button img:hover {
+    transform: scale(1.20); /* ホバー時に拡大 */
+  }
+
+.method-line {
+    width: 1365px;
+    height: 1.0px;
+    background-color: #223D6C;
+    /* ラインの色を指定 */
+    margin-right: 0;
+    margin-bottom: 1%;
+    /* 下に余白を追加 */
+}

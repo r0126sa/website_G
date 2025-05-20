@@ -1,0 +1,203 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
+    <title>website_G</title>
+    <link rel="stylesheet" href="reset.css">
+    <link rel="stylesheet" href="website_G.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+        const objects = document.querySelectorAll('.scroll-in');
+
+        const cb = function (entries, observer) {
+            entries.forEach(entry => {
+                console.log(`IsIntersecting: ${entry.isIntersecting}`, entry.target);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('displayed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1
+        };
+
+        const io = new IntersectionObserver(cb, options);
+
+        objects.forEach(object => {
+            io.observe(object);
+        });
+    });</script>
+
+<body>
+
+    <!--ヘッダー-->
+    <header>
+        <p class="title">PROJECTION <br> MAPPING </p>
+
+        <nav class="nav">
+            <ul class="menu-group">
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="method/projection.html">方法論と比較</a>
+                        <div class="menu-item-main">
+                            <a href="method/projection.html">METHOD</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="history/history.html">歴史</a>
+                        <div class="menu-item-main">
+                            <a href="history/history.html">HISTORY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="prospect/prospect.html">最新技術と例</a>
+                        <div class="menu-item-main">
+                            <a href="prospect/prospect.html">PROSPECT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="line"></div>
+        </nav>
+    </header>
+
+    <main>
+
+        <!--ホーム-->
+        <img src="photo/photo1.png" class="scroll-in" alt="MAPPING" width="90%" height="800"
+            style="display: block; margin:0 auto;">
+
+        <p class="main-title" style="margin-top: 3%; margin-right: 6%; transform: rotate(180deg); opacity: 0.5;">
+            PROJECTION <br> MAPPING
+        </p>
+
+        <img src="photo/photo2.png" class="scroll-in" alt="Photo2"
+            style="display: block; margin-top: -6.5%; margin-left: 5%;">
+
+
+        <!--プロジェクションマッピングとは-->
+        <section class="about-section">
+            <div class="about-container">
+                <p class="scroll-in sub-title">ABOUT</p>
+                <br>
+                <p class="scroll-in sub-strings">プロジェクションマッピングとは</p>
+                <br><br><br>
+                <div class="scroll-in about-line"></div>
+                <p class="scroll-in sub-strings">
+                    <br><br><br>
+                    プロジェクションマッピングとは、実物と映像をシンクロさせる映像手法である。<br><br><br>
+                    建築物や立体物などの凹凸のある面に映像を投映し、実物と映像を融合させることで<br><br><br>
+                    物体が動いたり変形したり、自ら光を放っているように見せる幻想的な表現を実現する。<br><br><br>
+                    プロジェクションマッピングは投映が終わればすぐ原状復帰できるのも大きな特徴である。<br><br><br>
+                    建物に手を加える必要がないため、歴史的建造物などの演出をすることも適している。<br><br><br>
+                </p>
+                <br>
+                <div class="scroll-in about-line"></div>
+            </div>
+        </section>
+
+        <!--方法論と比較-->
+        <p class="scroll-in sub-title" , style="margin-left: 5%">01</p>
+        <p class="scroll-in sub-strings" , style="margin-left: 10%; margin-top: -2.5%;">方法論と比較</p>
+        <div class="scroll-in method-line" , style="margin-left: 5%; margin-top: 1%;"></div>
+        <a href="method/projection.html" class="scroll-in image-button">
+            <img src="photo/photo3.svg" alt="Photo3" style="margin-left: 70%; margin-top: -4%;">
+        </a>
+        <p class="scroll-in sub-title" , style="margin-left: 5%; margin-top: -7%;">METHOD</p>
+
+        <div class="scroll-in content-wrapper">
+            <img src="photo/method.jpg" alt="Photo4" width="650" height="450" style="margin: 5%;">
+            <div class="text-and-photo">
+                <img src="photo/photo5.svg" class="scroll-in" alt="Photo5" width="377" height="379"
+                    style="margin: 15%; margin-left: -10%;">
+                <p class="scroll-in sub-strings" , style="margin-top: -100%;">
+                    <strong>「プロジェクションマッピング」</strong><br><br><br>
+                    において使われている、<br><br><br>
+                    主な技術や方法論について<br><br><br>
+                    他の技術との比較をまとめる<br><br><br>
+                </p>
+            </div>
+        </div>
+
+        <!--歴史-->
+        <section class="scroll-in history-section">
+            <p class="scroll-in sub-title" , style="margin-left: 5%">02</p>
+            <p class="scroll-in vertical-sub-strings" , style="margin-left: 8%; margin-top: 1.5%;">歴史</p>
+            <div class="scroll-in history-line" , style="margin-left: 13.75%; margin-top: -9%;"></div>
+            <p class="sub-title" , style="margin-right:63%; margin-top: -12.5%;  transform: rotate(90deg);">HISTORY
+            </p>
+            <a href="history/history.html" class="scroll-in image-button">
+                <img src="photo/photo3.svg" alt="Photo3" style="margin-top: 7%;">
+            </a>
+            <img src="photo/history.png" class="scroll-in" alt="Photo6" width="650" height="450"
+                style="margin-left: 45%; margin-top: -40%;">
+        </section>
+
+        <p class="scroll-in sub-strings" , style="text-align: center; margin-top: 3%;">
+            <strong>「プロジェクションマッピング」</strong>の歴史についてまとめ、歴史と共に技術の移り変わりを深掘りする
+        </p>
+        <img src="photo/photo7.svg" class="scroll-in" alt="Photo7"
+            style="margin-left: 10%; margin-top: -15%; position: absolute; z-index: -1;">
+
+        <!--最新技術と例-->
+        <img src="photo/prospect.jpeg" class="scroll-in" alt="Photo8"
+            style="margin-left: 8%; margin-top: 20%; position: relative;">
+
+        <div class="scroll-in group-container" style="margin-top: -43%; position: relative;">
+            <a href="prospect/prospect.html" class="scroll-in image-button">
+                <img src="photo/photo10.svg" alt="Photo10" 
+                    style="z-index: 1000; margin-left: 35%; margin-bottom: -7.5%; position: relative;">
+            </a>
+            <p class="scroll-in sub-title" style="margin-left: 75%;">03</p>
+            <p class="scroll-in sub-strings" style="margin-left: 81%; margin-top: -2.0%;">最新技術と例</p>
+            <br>
+            <div class="scroll-in prospect-line" style="margin-left: 48%; z-index: -1; position: relative;"></div>
+            <br>
+            <p class="scroll-in sub-title" style="margin-left: 74%;">PROSPECT</p>
+            <br><br><br>
+            <img src="photo/photo9.svg" class="scroll-in" alt="Photo9"
+                style="margin-left: 55%; position: absolute; z-index: -1;">
+            <br><br><br>
+            <p class="scroll-in sub-strings" style="margin-left: 55%;">
+                <strong>「プロジェクションマッピング」</strong>にまつわる<br><br><br>
+                先行研究や技術が実用されている例をあげながら<br><br><br>
+                これからの技術展望とその例について取り上げる<br><br><br>
+            </p>
+        </div>
+
+        <!--参考文献-->
+        <p class="scroll-in sub-title" , style="margin-top: 15%; margin-left: 5%">04</p>
+        <p class="scroll-in sub-strings" , style="margin-left: 11%; margin-top: -2.5%;">参考文献</p>
+        <p class="scroll-in sub-title" , style="margin-left: 5%; margin-top: 1%;">REFERENCES</p>
+        <div class="scroll-in method-line" , style="margin-left: 5%; margin-top: 1%;"></div>
+        <a href="references/references.html#main" class="scroll-in image-button">
+            <img src="photo/photo3.svg" alt="Photo3" style="margin-left: 70%; margin-top: -4%;">
+        </a>
+    </main>
+
+    <!--フッター-->
+    <footer class="footer">
+        <div class="footer-content">
+            <p class="sub2-strings">メディアプロジェクト演習1</p>
+            <p class="sub-strings"><strong>「プロジェクションマッピング」</strong>について</p>
+            <p class="sub2-strings">&copy; 2024 グループG : 森下りの</p>
+        </div>
+    </footer>
+</body>
+
+</html>

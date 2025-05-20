@@ -1,0 +1,333 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Marcellus+SC&family=Noto+Sans+JP&display=swap"
+        rel="stylesheet">
+    <title>website_G</title>
+    <link rel="stylesheet" href="website_G_refe.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+<script>document.addEventListener('DOMContentLoaded', () => {
+        const objects = document.querySelectorAll('.scroll-in');
+
+        const cb = function (entries, observer) {
+            entries.forEach(entry => {
+                console.log(`IsIntersecting: ${entry.isIntersecting}`, entry.target);
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('displayed');
+                    observer.unobserve(entry.target);
+                }
+            });
+        };
+
+        const options = {
+            root: null,
+            rootMargin: "0px",
+            threshold: 0.1
+        };
+
+        const io = new IntersectionObserver(cb, options);
+
+        objects.forEach(object => {
+            io.observe(object);
+        });
+    });</script>
+
+<body>
+
+    <!--ヘッダー-->
+    <header>
+        <p class="title">PROJECTION <br> MAPPING </p>
+
+        <nav class="nav">
+            <ul class="menu-group">
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="../method/projection.html">方法論と比較</a>
+                        <div class="menu-item-main">
+                            <a href="../method/projection.html">METHOD</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="../history/history.html">歴史</a>
+                        <div class="menu-item-main">
+                            <a href="../history/history.html">HISTORY</a>
+                        </div>
+                    </div>
+                </li>
+                <li class="menu-item">
+                    <div class="menu-item-sub">
+                        <a href="../prospect/prospect.html">最新技術と例</a>
+                        <div class="menu-item-main">
+                            <a href="../prospect/prospect.html">PROSPECT</a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="line"></div>
+        </nav>
+
+    </header>
+
+    <main>
+        <h1 class="sub-title" id="main">参考文献</h1>
+        <section>
+            <h2 class="strings">メインページ</h2><br>
+            <p>
+                1. Photo AC. “さっぽろホワイトイルミネーション”. Photo AC.
+                <a
+                    href="https://premium.photo-ac.com/main/detail/28596251?title=%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A4%E3%83%AB%E3%83%9F%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3">
+                    https://premium.photo-ac.com/main/detail/28596251?title=%E3%81%95%E3%81%A3%E3%81%BD%E3%82%8D%E3%83%9B%E3%83%AF%E3%82%A4%E3%83%88%E3%82%A4%E3%83%AB%E3%83%9F%E3%83%8D%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3</a>,
+                (参照 2024-11-15).
+            </p>
+            <br>
+            <p>
+                2. プロジェクションマッピング協会. “プロジェクションマッピングについて”. プロジェクションマッピング協会公式サイト.
+                <a href="https://projection-mapping.jp/about_pm">https://projection-mapping.jp/about_pm</a>, (参照
+                2024-11-15).
+            </p>
+            <br>
+            <p>
+                3. PC工房. “プロジェクションマッピングの技術”. PC工房公式サイト.
+                <a href="https://www.pc-koubou.jp/magazine/16865">https://www.pc-koubou.jp/magazine/16865</a>, (参照
+                2024-12-20).
+            </p>
+            <br>
+            <p>
+                4. Laborify. “三河ダイナミックプロジェクションマッピング”. Laborify.
+                <a
+                    href="https://laborify.net/2020/01/25/mikawa-dynamic-projection-mapping/">https://laborify.net/2020/01/25/mikawa-dynamic-projection-mapping/</a>,
+                (参照 2024-12-20).
+            </p>
+            <br>
+            <p>
+                5. 大成建設. “大成建設のプロジェクションマッピング技術”. 大成建設公式サイト.
+                <a
+                    href="https://www.taisei.co.jp/about_us/wn/2021/211227_8627.html">https://www.taisei.co.jp/about_us/wn/2021/211227_8627.html</a>,
+                (参照 2025-1-3).
+            </p>
+
+        </section>
+
+        <section id="method">
+            <h2 class="strings">方法論と比較</h2><br>
+            <p>
+                1. 一般社団法人プロジェクションマッピング協会. “プロジェクションマッピングについて”.
+                プロジェクションマッピング協会公式サイト.
+                <a href="https://projection-mapping.jp/about_pm">https://projection-mapping.jp/about_pm</a>, (参照
+                2024-11-13).
+            </p>
+            <br>
+            <p>
+                2. Resolume. “エッジブレンディング”. Resolume公式サポートサイト.
+                <a
+                    href="https://resolume.com/support/ja/edge-blending">https://resolume.com/support/ja/edge-blending</a>,
+                (参照 2024-11-13).
+            </p>
+            <br>
+            <p>
+                3. Reinforz株式会社. “リアルタイムトラッキングの最新技術と活用事例：進化する追跡テクノロジー”. Reinforzビジネスメディア.
+                <a href="https://reinforz.co.jp/bizmedia/44022/">https://reinforz.co.jp/bizmedia/44022/</a>, (参照
+                2024-11-13).
+            </p>
+            <br>
+            <p>
+                4. compositing-jigokuブログ. “合成のなじみを良くする「エッジブレンディング」のテクニック”. compositing-jigokuブログ.
+                <a
+                    href="http://compojigoku.blog.fc2.com/blog-entry-51.html">http://compojigoku.blog.fc2.com/blog-entry-51.html</a>,
+                (参照 2024-11-15).
+            </p>
+            <br>
+            <p>
+                5. ITmedia. “合成のなじみを良くする「エッジブレンディング」のテクニック”. ITmediaニュース.
+                <a
+                    href="https://www.itmedia.co.jp/news/articles/2103/31/news174_7.html">https://www.itmedia.co.jp/news/articles/2103/31/news174_7.html</a>,
+                (参照 2024-11-20).
+            </p>
+            <br>
+            <p>
+                6. 日本精密工学会. “プロジェクションマッピングにおけるキャリブレーション自動化の試み”. 日本精密工学会年次大会.
+                <a
+                    href="https://www.jstage.jst.go.jp/article/pscjspe/2020A/0/2020A_384/_pdf/-char/ja#:~:text=%E3%83%97%E3%83%AD%E3%82%B8%E3%82%A7%E3%82%AF%E3%82%B7%E3%83%A7%E3%83%B3%E3%83%9E%E3%83%83%E3%83%94%E3%83%B3%E3%82%B0%E3%81%A8%E3%81%AF%EF%BC%8C%E5%87%B9%E5%87%B8,%E6%A5%AD%E3%82%92%E3%82%AD%E3%83%A3%E3%83%AA%E3%83%96%E3%83%AC%E3%83%BC%E3%82%B7%E3%83%A7%E3%83%B3%E3%81%A8%E3%81%84%E3%81%86%EF%BC%8E">https://www.jstage.jst.go.jp/article/pscjspe/2020A/0/2020A_384/_pdf/-char/ja</a>,
+                (参照 2024-11-20).
+            </p>
+            <br>
+            <p>
+                7. マイナビニュース. “プロジェクションマッピングの原理”. マイナビニュース.
+                <a
+                    href="https://news.mynavi.jp/techplus/article/computer_vision-78/">https://news.mynavi.jp/techplus/article/computer_vision-78/</a>,
+                (参照 2024-11-20).
+            </p>
+            <br>
+            <p>
+                8. Wikipedia. “レンダリング (コンピュータ)”. Wikipedia.
+                <a
+                    href="https://ja.wikipedia.org/wiki/%E3%83%AC%E3%83%B3%E3%83%80%E3%83%AA%E3%83%B3%E3%82%B0_(%E3%82%B3%E3%83%B3%E3%83%94%E3%83%A5%E3%83%BC%E3%82%BF)">https://ja.wikipedia.org/wiki/レンダリング_(コンピュータ)</a>,
+                (参照 2025-01-02).
+            </p>
+            <br>
+            <p>
+                9. 3D-Modely. “3Dアニメーションのレンダリングとは？”. 3D-Modely公式ブログ.
+                <a href="https://3d-modely.com/blog/how-to/post-1555/">https://3d-modely.com/blog/how-to/post-1555/</a>,
+                (参照 2025-01-02).
+            </p>
+            <br>
+            <p>
+                10. パソコン工房. “ミニプロジェクションマッピングに挑戦”. パソコン工房マガジン.
+                <a href="https://www.pc-koubou.jp/magazine/16865">https://www.pc-koubou.jp/magazine/16865</a>, (参照
+                2025-01-05).
+            </p>
+        </section>
+        </div>
+
+        <section id="history">
+            <h2 class="strings">歴史</h2><br>
+            <p>
+                1. 日本デザイン学会. “プロジェクションアートの歴史と現状”. 日本デザイン学会.
+                <a
+                    href="https://www.jstage.jst.go.jp/article/jssd/71/0/71_376/_article/-char/ja/#article-overiew-abstract-wrap">https://www.jstage.jst.go.jp/article/jssd/71/0/71_376/_article/-char/ja/#article-overiew-abstract-wrap</a>,
+                (参照 2024-11-13).
+            </p>
+            <br>
+            <p>
+                2. NECネクサソリューションズ. “プロジェクションマッピング―古典的技術から生まれた最新メディア”. NECネクサソリューションズ公式サイト.
+                <a
+                    href="https://www2.nec-nexs.com/bizsupli/break/tech/03.html">https://www2.nec-nexs.com/bizsupli/break/tech/03.html</a>,
+                (参照 2024-11-13).
+            </p>
+            <br>
+            <p>
+                3. 日本バーチャルリアリティ学会. “s7-9.pdf”. 日本バーチャルリアリティ学会.
+                <a href="http://journal.vrsj.org/19-2/s7-9.pdf">http://journal.vrsj.org/19-2/s7-9.pdf</a>, (参照
+                2024-11-13).
+            </p>
+            <br>
+            <p>
+                4. チームラボ. “Works”. チームラボ公式サイト.
+                <a
+                    href="https://www.team-lab.com/works/?category=video">https://www.team-lab.com/works/?category=video</a>,
+                (参照 2024-11-17).
+            </p>
+            <br>
+            <p>
+                5. 日経ビジネス. “チームラボとは？「デジタルアート」で世界から評価される制作会社”. 日経ビジネス電子版.
+                <a
+                    href="https://business.nikkei.com/atcl/gen/19/00081/121300292/">https://business.nikkei.com/atcl/gen/19/00081/121300292/</a>,
+                (参照 2024-11-17).
+            </p>
+            <br>
+            <p>
+                6. 一般社団法人プロジェクションマッピング協会. “プロジェクションマッピング国際大会”. プロジェクションマッピング協会公式サイト.
+                <a
+                    href="https://projection-mapping.jp/pm_international/">https://projection-mapping.jp/pm_international/</a>,
+                (参照 2025-11-17).
+            </p>
+            <br>
+            <p>
+                7. 株式会社P.I.C.S. “TOKYO STATION VISION”. P.I.C.S.公式サイト.
+                <a
+                    href="https://www.pics.tokyo/works/ooh_tokyo-station-vision/">https://www.pics.tokyo/works/ooh_tokyo-station-vision/</a>,
+                (参照 2024-11-20).
+            </p>
+            <br>
+            <p>
+                8. 株式会社ネイキッド. “TOKYO HIKARI VISION”. ネイキッド公式サイト.
+                <a href="https://naked.co.jp/works/852/">https://naked.co.jp/works/852/</a>, (参照 2024-11-20).
+            </p>
+            <br>
+            <p>
+                9. JSTORIES. “世界最大級のプロジェクションマッピング国際大会が東京で開催”. JSTORIES公式サイト.
+                <a
+                    href="https://jstories.media/jp/article/projection-mapping-2024">https://jstories.media/jp/article/projection-mapping-2024</a>,
+                (参照 2024-12-15).
+            </p>
+            <br>
+            <p>
+                10. 東京ディズニーリゾート. “【公式】「ワンス・アポン・ア・タイム」が、本日よりスタート！！”. 東京ディズニーリゾート公式ブログ.
+                <a
+                    href="https://www.tokyodisneyresort.jp/tdrblog/detail/140529/">https://www.tokyodisneyresort.jp/tdrblog/detail/140529/</a>,
+                (参照 2024-12-15).
+            </p>
+            <br>
+            <p>
+                11. YouTube. “Disneyland Haunted Mansion Grim Grinning Ghost Singing”. YouTube.
+                <a
+                    href="https://youtu.be/xk9fSNb5aNM?si=WeTu4RLl_9VMimEp">https://youtu.be/xk9fSNb5aNM?si=WeTu4RLl_9VMimEp</a>,
+                (参照 2025-01-02).
+            </p>
+            <br>
+            <p>
+                12. YouTube. “Pablo Valbuena, Augmented Sculpture v. 1.2”. YouTube.
+                <a
+                    href="https://youtu.be/5nzhV0x3_qM?si=WJgUys1UmSz8v6oF">https://youtu.be/5nzhV0x3_qM?si=WJgUys1UmSz8v6oF</a>,
+                (参照 2025-01-02).
+            </p>
+            <br>
+            <p>
+                13. YouTube. “TOKYO STATION VISION 東京駅プロジェクションマッピング”. YouTube.
+                <a
+                    href="https://youtu.be/xHsbdq8GtKc?si=QfCBeLM-5HgHbSLH">https://youtu.be/xHsbdq8GtKc?si=QfCBeLM-5HgHbSLH</a>,
+                (参照 2025-01-02).
+            </p>
+            <br>
+            <p>
+                14. YouTube. “Grand Prize / Tokyo Governor Prize : [ Room 808 ] Kentaro Tanaka（Japan）”. YouTube.
+                <a
+                    href="https://youtu.be/W-_cZQ7mqhw?si=ARPKDQyqXekGCCAQ">https://youtu.be/W-_cZQ7mqhw?si=ARPKDQyqXekGCCAQ</a>,
+                (参照 2025-01-02).
+            </p>
+
+
+
+
+        </section>
+
+
+        <section id="prospect">
+            <h2 class="strings">最新技術と例</h2><br>
+            <p>
+                1. Newswitch. “化粧品でのプロジェクションマッピング活用事例”. Newswitch公式サイト.
+                <a href="https://newswitch.jp/p/30275">https://newswitch.jp/p/30275</a>, (参照 2024-11-13).
+            </p>
+            <br>
+            <p>
+                2. 株式会社KOSE. “AR技術を活用した新しい美容体験”. PR TIMES.
+                <a
+                    href="https://prtimes.jp/main/html/rd/p/000000383.000041232.html">https://prtimes.jp/main/html/rd/p/000000383.000041232.html</a>,
+                (参照 2024-11-13).
+            </p>
+            <br>
+            <p>
+                3. YouTube. “KOSEプロジェクションマッピングの紹介動画”. YouTube.
+                <a
+                    href="https://youtu.be/81L3gimwQ84?si=ev1iQGc7FUqAUZxD">https://youtu.be/81L3gimwQ84?si=ev1iQGc7FUqAUZxD</a>,
+                (参照 2024-11-23).
+            </p>
+            <br>
+            <p>
+                4. 清水建設. “プロジェクションマッピングによる建築デザインの活用事例”. 清水建設公式サイト.
+                <a
+                    href="https://www.shimz.co.jp/company/about/news-release/2017/2017015.html">https://www.shimz.co.jp/company/about/news-release/2017/2017015.html</a>,
+                (参照 2025-01-03).
+            </p>
+        </section>
+    </main>
+
+    <!--フッター-->
+    <footer class="footer" style="margin-top: 5%;">
+        <div class="footer-content">
+            <p class="sub2-strings">メディアプロジェクト演習1</p>
+            <p class="sub-strings"><strong>「プロジェクションマッピング」</strong>について</p>
+            <p class="sub2-strings">&copy; 2024 グループG</p>
+        </div>
+    </footer>
+</body>
+
+</html>

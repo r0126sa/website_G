@@ -1,0 +1,270 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.box {
+    width: 100vw;
+    height: 100vh;
+  }
+
+body {
+    background-color: #F4F8FF;
+    color: #223D6C;
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+
+main {
+    padding-top: 15%;
+    font-family: "Marcellus SC", "Noto Sans JP", sans-serif;
+}
+
+.nav {
+    flex-grow: 1;
+}
+
+/* headerのcss */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    width: 100%;
+    min-height: 20vh;
+    background-color: #F4F8FF;
+    font-family: "Marcellus SC", serif;
+    font-size: 40pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    position: fixed;
+    z-index: 9999;
+    padding: 0% 5%;
+}
+
+/* ３項目のボタンのcss */
+.menu-group {
+    list-style: none;
+    text-align: center;
+    justify-content: flex-end;
+    display: flex;
+    gap: 4rem;
+    padding-bottom: 1%;
+}
+
+.menu-group .menu-item-sub a {
+    font-size: 14pt;
+}
+
+.menu-group .menu-item-main a {
+    font-size: 24pt;
+}
+
+/* ３項目を押したら少し拡大する */
+.menu-item:hover {
+    text-decoration: none;
+    transform: scale(1.25);
+    /* ホバー時に25%拡大 */
+}
+
+/* タイトルを押したら少し拡大する */
+.title:hover {
+    text-decoration: none;
+    transform: scale(1.1);
+    /* ホバー時に25%拡大 */
+}
+
+.line {
+    width: 100%;
+    height: 1px;
+    background-color: #223D6C;
+}
+
+/* ここからが本文のcss */
+.main-title {
+    font-size: 40pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.sub-title {
+    font-size: 36pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+
+}
+
+.sub2-title {
+    font-size: 30pt;
+    font-weight: 300;
+    letter-spacing: 3px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+
+}
+
+.strings {
+    font-size: 20pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.sub-strings {
+    font-size: 16pt;
+    font-weight: 300;
+    letter-spacing: 2px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.sub2-strings {
+    font-size: 14pt;
+    font-weight: 100;
+    letter-spacing: 2px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.vertical-sub-strings {
+    writing-mode: vertical-rl;
+    /* 縦書き */
+    font-size: 16pt;
+    /* フォントサイズ */
+    font-weight: 100;
+    letter-spacing: 5px;
+    /* 文字間隔 */
+    font-family: "Marcellus SC", "Noto Serif JP", serif;
+}
+
+.image-button img:hover {
+    transform: scale(1.20); /* ホバー時に拡大 */
+  }
+
+.about-section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 10% 0%;
+}
+
+.about-container {
+    width: 100%;
+    height: 800px;
+    background-color: #223D6C;
+    /* 四角の背景色 */
+    color: #F4F8FF;
+    /* テキストの色 */
+    padding: 60px;
+    text-align: center;
+}
+
+.about-line {
+    width: 100%;
+    /* ラインの幅 */
+    height: 0.1%;
+    /* ラインの高さ */
+    background-color: #F4F8FF;
+    /* ラインの色 */
+    margin: 0 auto;
+    /* 要素自体を中央揃え */
+}
+
+.method-line {
+    width: 1365px;
+    height: 1.0px;
+    background-color: #223D6C;
+    /* ラインの色を指定 */
+    margin-right: 0;
+    margin-bottom: 1%;
+    /* 下に余白を追加 */
+}
+
+.content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    margin: 0px auto;
+    margin-top: -1%;
+    margin-bottom: 10%;
+    /* 下に余白を追加 */
+
+}
+
+.text-and-photo {
+    position: relative;
+    /* 親要素に相対位置を指定 */
+    width: 377px;
+    height: 379px;
+    margin: 5% auto;
+}
+
+.history-line {
+    border-left: 1.0px solid #223D6C;
+    height: 400px;
+    width: 0;
+}
+
+.history-section {
+    margin-left: 5%;
+
+}
+
+.prospect-line {
+    width: 630px;
+    height: 1.0px;
+    background-color: #223D6C;
+    /* ラインの色を指定 */
+}
+
+.prospect-margin {
+    margin-bottom: 100vh;
+}
+
+.footer {
+    background-color: #2E3A5F; /* フッターの背景色 (例: ダークブルー) */
+    color: white; /* 文字の色 */
+    text-align: center; /* テキストを中央揃え */
+    padding: 30px 0; /* 上下の余白を設定 */
+    font-family: "Noto Serif JP", serif;
+    line-height: 2.0; /* 行間を設定 */
+  }
+  
+  .footer-content p {
+    margin: 5px 0; /* 各段落の間隔を設定 */
+  }
+
+ /* 動きをつけるCSSアニメーション */
+ .scroll-in {
+    opacity: 0;
+    transform: translateY(50px);
+    transition: opacity 1.5s ease, transform 1.5s ease;
+}
+
+.scroll-in.displayed {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+
+.displayed {
+    animation: fadeUp 1s forwards;
+  }
+  
+  @keyframes fadeUp {
+    0% {
+      opacity: 0;
+      transform: translateY(100px); /* 初期位置を少し下に */
+    }
+    100% {
+      opacity: 1;
+      transform: translateY(0); /* 元の位置 */
+    }
+  }
+
+  
